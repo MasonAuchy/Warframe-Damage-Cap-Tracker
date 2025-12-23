@@ -12,7 +12,7 @@ Open to suggestions should they come, otherwise I hope you enjoy.
 ![App Screenshot](screenshot.png)
 
 ## How to Use
-1. Download the `DamageTracker.exe` from the **Releases** section or build from source.
+1. Download the `Dashboard.exe` from the **Releases** section or build from source.
 2. Launch Warframe.
 3. Run the tracker. It will automatically find your `EE.log` and start listening.
 
@@ -20,4 +20,5 @@ Open to suggestions should they come, otherwise I hope you enjoy.
 If running from source, you will need:
 - Python 3.10+
 - Run `pip install -r requirements.txt`
+
 - Run the main file
