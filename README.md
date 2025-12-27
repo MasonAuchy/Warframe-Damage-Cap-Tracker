@@ -10,6 +10,7 @@ Open to suggestions should they come, otherwise I hope you enjoy.
 - **History Log:** A scrolling list of hits with human-readable scales (Billion, Trillion, etc.) calling out when you hit a new best.
 - **Total DAMAGE:** Track just how much damage you have done with the application running.
 - **Automatic Save:** Your stats are automatically saved and loaded, along with being quickly reset when desired. 
+
 ![App Screenshot](screenshot.png)
 
 ## How to Use
@@ -23,4 +24,3 @@ If running from source, you will need:
 - Run `pip install -r requirements.txt`
 
 - Run the main file
-
