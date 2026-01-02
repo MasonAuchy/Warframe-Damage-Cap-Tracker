@@ -38,8 +38,6 @@ class DamageTracker(ctk.CTk):
                 self.total_hits_above_cap = data.get("total_hits_above_cap", 1)
                 self.all_hits = data.get("all_hits", 0)
 
-                
-
         self.top_frame = ctk.CTkFrame(self, fg_color="transparent")
         self.top_frame.pack(side="top", fill="both", padx=10, pady=5)
         self.top_frame.grid_columnconfigure(0, weight=1) 
@@ -139,6 +137,7 @@ class DamageTracker(ctk.CTk):
 
     def update_data(self, val, raw):
         self.damage_history.append(val)
+        
         self.all_hits += val
         if len(self.damage_history) > 50:
             self.damage_history.pop(0)
