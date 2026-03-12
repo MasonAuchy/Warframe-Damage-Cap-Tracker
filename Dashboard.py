@@ -179,7 +179,16 @@ class DamageTracker(ctk.CTk):
 
     def on_closing(self):
         local_app_data = os.environ.get('LOCALAPPDATA')
-        file_path = os.path.join(local_app_data, "Warframe", "savelog.json")
+        dir_path = os.path.join(local_app_data, "Warframe")
+        file_path = os.path.join(dir_path, "savelog.json")
+
+        if not os.path.exists(dir_path):
+            os.makedirs(dir_path)
+
+        if not os.path.exists(file_path):
+                with open(file_path, 'w') as f:
+                    json.dump({}, f)
+
         data_to_save = {
             "damage_history": self.damage_history,
             "max_hit": self.max_hit,
