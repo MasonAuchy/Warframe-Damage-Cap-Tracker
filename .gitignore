@@ -1,3 +1,5 @@
 build/
 dist/
-dashboard.spec
+__pycache__/
+*.pyc
+WF Damage Tracker.spec
